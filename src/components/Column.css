@@ -1,0 +1,10 @@
+.column {
+    background-color: #4f4f54;
+    border-radius: 5px;
+    padding: 15px;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
