@@ -11,8 +11,8 @@ import About from './pages/About'
 import Faq from './pages/help/Faq'
 import Contact from './pages/help/Contact'
 import NotFound from './pages/NotFound'
-import Stories, { storiesLoader } from './pages/stories/Stories'
-import StoryDetails, { storyDetailsLoader } from "./pages/stories/StoryDetails"
+import Stories from './pages/stories/Stories'
+import StoryDetails from "./pages/stories/StoryDetails"
 import StoryError from './pages/stories/StoryError'
 import SportsLeagues from './pages/SportsLeagues'
 import Groups from './pages/Groups'
@@ -44,13 +44,12 @@ const router = createBrowserRouter(
         <Route 
           index 
           element={<Stories />} 
-          loader={storiesLoader}
+          
           // errorElement={<CareersError />}
         />
         <Route 
           path=":id" 
           element={<StoryDetails />}
-          loader={storyDetailsLoader}
         />
       </Route>
 

@@ -76,7 +76,73 @@ export default function Standings(){
 
     ];
 
+    const nba_tasks = [
+        {id: 1, title: "Atlanta Hawks", URL: "https://content.sportslogos.net/logos/6/220/full/8190_atlanta_hawks-primary-2021.png"},
+        {id: 2, title: "Boston Celtics", URL: "https://content.sportslogos.net/logos/6/213/full/boston_celtics_logo_primary_19977628.png"},
+        {id: 3, title: "Brooklyn Nets", URL: "https://content.sportslogos.net/logos/6/3786/full/brooklyn_nets_logo_primary_2025_sportslogosnet-1501.png"},
+        {id: 4, title: "Charlotte Hornets", URL: "https://content.sportslogos.net/logos/6/5120/full/1926_charlotte__hornets_-primary-2015.png"},
+        {id: 5, title: "Chicago Bulls", URL: "https://content.sportslogos.net/logos/6/221/full/chicago_bulls_logo_primary_19672598.png"},
+        {id: 6, title: "Cleveland Cavaliers", URL: "https://content.sportslogos.net/logos/6/222/full/cleveland_cavaliers_logo_primary_2023_sportslogosnet-5369.png"},
+        {id: 7, title: "Dallas Mavericks", URL: "https://content.sportslogos.net/logos/6/228/full/3463_dallas_mavericks-primary-2018.png"},
+        {id: 8, title: "Denver Nuggets", URL: "https://content.sportslogos.net/logos/6/229/full/8926_denver_nuggets-primary-2019.png"},
+        {id: 9, title: "Detroit Pistons", URL: "https://content.sportslogos.net/logos/6/223/full/detroit_pistons_logo_primary_20185710.png"},
+        {id: 10, title: "Golden State Warriors", URL: "https://content.sportslogos.net/logos/6/235/full/3152_golden_state_warriors-primary-2020.png"},
+        {id: 11, title: "Houston Rockets", URL: "https://content.sportslogos.net/logos/6/230/full/6830_houston_rockets-primary-2020.png"},
+        {id: 12, title: "Indiana Pacers", URL: "https://content.sportslogos.net/logos/6/224/full/4812_indiana_pacers-primary-2018.png"},
+        {id: 13, title: "Los Angeles Clippers", URL: "https://content.sportslogos.net/logos/6/236/full/los_angeles_clippers_logo_primary_2025_sportslogosnet-5542.png"},
+        {id: 14, title: "Los Angeles Lakers", URL: "https://content.sportslogos.net/logos/6/237/full/los_angeles_lakers_logo_primary_2024_sportslogosnet-7324.png"},
+        {id: 15, title: "Memphis Grizzlies", URL: "https://content.sportslogos.net/logos/6/231/full/4373_memphis_grizzlies-primary-2019.png"},
+        {id: 16, title: "Miami Heat", URL: "https://content.sportslogos.net/logos/6/214/full/burm5gh2wvjti3xhei5h16k8e.gif"},
+        {id: 17, title: "Milwaukee Bucks", URL: "https://content.sportslogos.net/logos/6/225/full/milwaukee_bucks_logo_primary_20165763.png"},
+        {id: 18, title: "Minnesota Timberwolves", URL: "https://content.sportslogos.net/logos/6/232/full/9669_minnesota_timberwolves-primary-2018.png"},
+        {id: 19, title: "New Orleans Pelicans", URL: "https://content.sportslogos.net/logos/6/4962/full/new_orleans_pelicans_logo_primary_2024_sportslogosnet-9292.png"},
+        {id: 20, title: "New York Knicks", URL: "https://content.sportslogos.net/logos/6/216/full/new_york_knicks_logo_primary_2024_sportslogosnet-7170.png"},
+        {id: 21, title: "Oklahoma City Thunder", URL: "https://content.sportslogos.net/logos/6/2687/full/khmovcnezy06c3nm05ccn0oj2.png"},
+        {id: 22, title: "Orlando Magic", URL: "https://content.sportslogos.net/logos/6/217/full/orlando_magic_logo_primary_20117178.png"},
+        {id: 23, title: "Philadelphia 76ers", URL: "https://content.sportslogos.net/logos/6/218/full/7034_philadelphia_76ers-primary-2016.png"},
+        {id: 24, title: "Phoenix Suns", URL: "https://content.sportslogos.net/logos/6/238/full/phoenix_suns_logo_primary_20143696.png"},
+        {id: 25, title: "Portland Trail Blazers", URL: "https://content.sportslogos.net/logos/6/239/full/9725_portland_trail_blazers-primary-2018.png"},
+        {id: 26, title: "Sacramento Kings", URL: "https://content.sportslogos.net/logos/6/240/full/4043_sacramento_kings-primary-2017.png"},
+        {id: 27, title: "San Antonio Spurs", URL: "https://content.sportslogos.net/logos/6/233/full/2547_san_antonio_spurs-primary-2018.png"},
+        {id: 28, title: "Toronto Raptors", URL: "https://content.sportslogos.net/logos/6/227/full/7024_toronto_raptors-primary-2021.png"},
+        {id: 29, title: "Utah Jazz", URL: "https://content.sportslogos.net/logos/6/234/full/utah_jazz_logo_primary_2023_sportslogosnet-8513.png"},
+        {id: 30, title: "Washington Wizards", URL: "https://content.sportslogos.net/logos/6/219/full/5671_washington_wizards-primary-2016.png"}
+    ];
 
+    const mlb_tasks = [
+
+        {id: 1, title: "Arizona Diamondbacks", URL: "https://content.sportslogos.net/logos/54/50/full/arizona_diamondbacks_logo_primary_20123733.png"},
+        {id: 2, title: "Atlanta Braves", URL: "https://content.sportslogos.net/logos/54/51/full/atlanta_braves_logo_primary_20221869.png"},
+        {id: 3, title: "Baltimore Orioles", URL: "https://content.sportslogos.net/logos/53/52/full/baltimore_orioles_logo_primary_20195398.png"},
+        {id: 4, title: "Boston Red Sox", URL: "https://content.sportslogos.net/logos/53/53/full/boston_red_sox_logo_primary_20097510.png"},
+        {id: 5, title: "Chicago White Sox", URL: "https://content.sportslogos.net/logos/53/55/full/chicago_white_sox_logo_primary_19911413.png"},
+        {id: 6, title: "Chicago Cubs", URL: "https://content.sportslogos.net/logos/54/54/full/chicago_cubs_logo_primary_19792956.pn"},
+        {id: 7, title: "Cincinnati Reds", URL: "https://content.sportslogos.net/logos/53/55/full/chicago_white_sox_logo_primary_19911413.png"},
+        {id: 8, title: "Cleveland Guardians", URL: "https://content.sportslogos.net/logos/53/6804/full/cleveland_guardians_logo_primary_20227577.png"},
+        {id: 9, title: "Colorado Rockies", URL: "https://content.sportslogos.net/logos/54/58/full/colorado_rockies_logo_primary_20171892.png"},
+        {id: 10, title: "Detroit Tigers", URL: "https://content.sportslogos.net/logos/53/59/full/detroit_tigers_logo_primary_20162109.png"},
+        {id: 11, title: "Houston Astros", URL: "https://content.sportslogos.net/logos/53/4929/full/houston_astros_logo_primary_20137038.png"},
+        {id: 12, title: "Kansas City Royals", URL: "https://content.sportslogos.net/logos/53/62/full/kansas_city_royals_logo_primary_20198736.png"},
+        {id: 13, title: "Los Angeles Angels", URL: "https://content.sportslogos.net/logos/53/6521/full/4389_los_angeles_angels-primary-2016.png"},
+        {id: 14, title: "Los Angeles Dodgers", URL: "https://content.sportslogos.net/logos/54/63/full/los_angeles_dodgers_logo_primary_20127886.png"},
+        {id: 15, title: "Miami Marlins", URL: "https://content.sportslogos.net/logos/54/3637/full/miami_marlins_logo_primary_20194007.png"},
+        {id: 16, title: "Milwaukee Brewers", URL: "https://content.sportslogos.net/logos/54/64/full/6474_milwaukee_brewers-primary-2020.png"},
+        {id: 17, title: "Minnesota Twins", URL: "https://content.sportslogos.net/logos/53/65/full/minnesota_twins_logo_primary_2023_sportslogosnet-3953.png"},
+        {id: 18, title: "New York Yankees", URL: "https://content.sportslogos.net/logos/53/68/full/new_york_yankees_logo_primary_19685115.png"},
+        {id: 19, title: "New York Mets", URL: "https://content.sportslogos.net/logos/54/67/full/m01gfgeorgvbfw15fy04alujm.png"},
+        {id: 20, title: "Oakland Athletics", URL: "https://content.sportslogos.net/logos/53/69/full/6xk2lpc36146pbg2kydf13e50.png"},
+        {id: 21, title: "Philadelphia Phillies", URL: "https://content.sportslogos.net/logos/54/70/full/philadelphia_phillies_logo_primary_20193931.png"},
+        {id: 22, title: "Pittsburgh Pirates", URL: "https://content.sportslogos.net/logos/54/71/full/1250_pittsburgh_pirates-primary-2014.png"},
+        {id: 23, title: "San Diego Padres", URL: "https://content.sportslogos.net/logos/54/73/full/7517_san_diego_padres-primary-2020.png"},
+        {id: 24, title: "San Francisco Giants", URL: "https://content.sportslogos.net/logos/54/74/full/san_francisco_giants_logo_primary_20002208.png"},
+        {id: 25, title: "Seattle Mariners", URL: "https://content.sportslogos.net/logos/53/75/full/seattle_mariners_logo_primary_19933809.png"},
+        {id: 26, title: "St. Louis Cardinals", URL: "https://content.sportslogos.net/logos/54/72/full/3zhma0aeq17tktge1huh7yok5.png"},
+        {id: 27, title: "Tampa Bay Rays", URL: "https://content.sportslogos.net/logos/54/72/full/3zhma0aeq17tktge1huh7yok5.png"},
+        {id: 28, title: "Texas Rangers", URL: "https://content.sportslogos.net/logos/53/77/full/ajfeh4oqeealq37er15r3673h.png"},
+        {id: 29, title: "Toronto Blue Jays", URL: "https://content.sportslogos.net/logos/53/78/full/toronto_blue_jays_logo_primary_20208446.png"},
+        {id: 30, title: "Washington Nationals", URL: "https://content.sportslogos.net/logos/54/578/full/washington_nationals_logo_primary_20117280.png"}
+
+    ];
 
     const getTaskPos = (id) => tasks.findIndex((task) => task.id === id);
 

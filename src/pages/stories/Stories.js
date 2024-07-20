@@ -1,9 +1,66 @@
-import { Link, useLoaderData } from "react-router-dom"
+import { Link } from "react-router-dom"
 import ComboBox from "./StoryCombo";
 import { useState } from 'react';
 
 export default function Stories() {
-  const stories = useLoaderData()
+  const stories = [
+    {
+      id: 1,
+      title: "Are the Oilers going to complete the comeback agaisnt the Panthers?",
+      sport: "hockey",
+      author: "John Doe",
+      location: "Ottawa, Canada",
+      date: "June 22nd, 2024"
+    },
+    {
+      id: 2,
+      title: "Second-Round Pick Mogbo Agrees to Three-Year Deal with Raptors",
+      sport: "basketball",
+      author: "John Doe",
+      location: "Ottawa, Canada",
+      date : "July 4th, 2024"
+    },
+    {
+      id: 3,
+      title: "Tour de France 2024 Stage 6 Preview: Sprinters Ready",
+      sport: "biking",
+      author: "John Doe",
+      location: "Ottawa, Canada",
+      date : "July 3rd, 2024"
+    },
+    {
+     id: 4,
+      title: "5 Questions as the Dust Settles on 2024 NBA Free Agency",
+      sport: "basketball",
+      author: "John Doe",
+      location: "Ottawa, Canada",
+      date : "July 3rd, 2024"
+    },
+    {
+      id: 5,
+      title: "Capitals acquire Jakob Chychrun in deal with Senators",
+      sport: "hockey",
+      author: "John Doe",
+      location: "Ottawa, Canada",
+      date : "July 1st, 2024"
+    },
+    {
+      id: 6,
+      title: "Shane Pinto breathing sigh of relief after signing",
+      sport: "hockey",
+      author: "John Doe",
+      location: "Ottawa, Canada",
+      date :"July 3rd, 2024"
+    },
+    {
+     id: 7,
+      title: "Vikings WR Jordan Addison believs he's taken his 'game to the next level' after stellar rookie year",
+      sport: "football",
+      author: "John Doe",
+      location: "Ottawa, Canada",
+      date : "June 29th, 2024"
+    }
+  ];
 
   const [selectedSport, setSelectedSport] = useState('');
 
@@ -27,15 +84,4 @@ export default function Stories() {
       ))}
     </div>
   );
-}
-
-// data loader
-export const storiesLoader = async () => {
-  const res = await fetch('http://localhost:4000/stories')
-
-  if (!res.ok) {
-    throw Error('Could not fetch the list of stories')
-  }
-
-  return res.json()
 }
