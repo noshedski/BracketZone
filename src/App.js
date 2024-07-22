@@ -27,7 +27,7 @@ import HelpLayout from './layouts/HelpLayout'
 import SportsLayout from './layouts/SportsLayout'
 import StoriesLayout from './layouts/StoriesLayout'
 import GroupLayout from './layouts/GroupLayout'
-import TeamsInfo, { teamsLoader } from './pages/sportsinfo/TeamsInfo'
+import TeamsInfo from './pages/sportsinfo/TeamsInfo'
 
 
 
@@ -60,7 +60,6 @@ const router = createBrowserRouter(
         <Route
           path=":league"
           element={<TeamsInfo/>}
-          loader={teamsLoader}
         />
       </Route>
 

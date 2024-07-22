@@ -2,9 +2,10 @@ import {closestCorners, DndContext} from "@dnd-kit/core"
 import { Column } from "../components/Column";
 import { useState } from "react";
 import { arrayMove } from "@dnd-kit/sortable";
+import ComboBox from "./StandingCombo";
 
 export default function Standings(){
-    const[tasks, setTasks] = useState([
+    const nfl_tasks = [
         { id: 1, title: "Arizona Cardinals", URL : "https://content.sportslogos.net/logos/7/177/full/arizona_cardinals_logo_primary_20058304.png"},
         { id: 2, title: "Atlanta Falcons", URL : "https://content.sportslogos.net/logos/7/173/full/299.png"},
         { id: 3, title: "Baltimore Ravens", URL : "https://content.sportslogos.net/logos/7/153/full/318.png"},
@@ -38,7 +39,8 @@ export default function Standings(){
         { id: 31, title: "Tennessee Titans", URL: "https://content.sportslogos.net/logos/7/160/full/1053.png" },
         { id: 32, title: "Washington Commanders", URL: "https://content.sportslogos.net/logos/7/6832/full/washington_commanders_logo_primary_20228587.png" }
         
-    ])
+    ];
+    
 
     const nhl_tasks = [
         { id: 1, title: "Anaheim Ducks", URL : "https://content.sportslogos.net/logos/1/1736/full/anaheim_ducks_logo_primary_20253347.png" },
@@ -144,6 +146,8 @@ export default function Standings(){
 
     ];
 
+    const[tasks, setTasks] = useState(nfl_tasks)
+
     const getTaskPos = (id) => tasks.findIndex((task) => task.id === id);
 
     const handleDragEnd = (event) => {
@@ -165,11 +169,24 @@ export default function Standings(){
 
     }
 
+    const handleSelect =(leagueChosen) => {
+        if (leagueChosen === "nba"){
+            setTasks(nba_tasks)
+        }else if (leagueChosen === "mlb"){
+            setTasks(mlb_tasks)
+        }else if (leagueChosen === "nfl"){
+            setTasks(nfl_tasks)
+        }else if (leagueChosen === "nhl"){
+            setTasks(nhl_tasks)
+        }
+    }
+
     return(
        <div className="standings">
         <h1>Standings</h1>
-        <h3>Below is an example of picking and choosing sports teams standings before the season begins. Users can move drag and drop and click submit to submit!</h3>
+        <h3>Below is an example of picking and choosing sports teams standings before the season begins. Users can move drag and drop and click submit to submit! The drop down is for the league you want to choose.</h3>
         <button onClick={handleClick}>Submit!</button>
+        <ComboBox onSelect={handleSelect} /> 
         <DndContext collisionDetection={closestCorners} onDragEnd={handleDragEnd}>
 
             <Column tasks={tasks}/> 

@@ -20,11 +20,48 @@ p {
 button {
   border: 0;
   padding: 8px;
+  margin-left: 5px;
   border-radius: 4px;
   color: white;
   background: var(--primary);
   cursor: pointer;
 }
+
+.home {
+  display: flex;
+  
+  padding: 20px;
+  max-width: 1000px; 
+  margin: auto; 
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column; /* Stacks h2 and h3 vertically */
+  margin-right: 20px; /* Adds some space between the text and the image */
+}
+
+.home h2 {
+  font-size: 45px;
+  margin: 0;
+}
+
+.home span {
+  font-size: 40px;
+  
+  color: #bc4123;
+}
+
+.home img {
+  /* Optional: sets a maximum width for the image */
+  
+  height: 600px; /* Ensures the image maintains its aspect ratio */
+  margin-left: 20px; /* Adds some space between the text and the image */
+  box-shadow: 2px 2px 10px rgb(254, 252, 252); /* Adds a small shadow to the image */
+}
+
+
+
 
 /* navbar */
 header nav {
@@ -270,3 +307,41 @@ form label span {
   text-decoration: none;
 }
 
+.combo {
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+  overflow: hidden;
+  background: #bc4123;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.combo select {
+  content: "▼";
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: #010101;
+  border-radius: 0;
+  background: #bc4123;
+  padding: 10px;
+  font: bold;
+  font-size: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.combo::after {
+  content: "▼";
+  font-size: 12px;
+  color: #fafafa;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
