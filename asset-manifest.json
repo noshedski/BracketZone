@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bracketzone/static/css/main.a7f75fbc.css",
-    "main.js": "/bracketzone/static/js/main.f57c1899.js",
+    "main.css": "/bracketzone/static/css/main.eb925672.css",
+    "main.js": "/bracketzone/static/js/main.5e2e1229.js",
     "static/js/453.049c7701.chunk.js": "/bracketzone/static/js/453.049c7701.chunk.js",
     "index.html": "/bracketzone/index.html",
-    "main.a7f75fbc.css.map": "/bracketzone/static/css/main.a7f75fbc.css.map",
-    "main.f57c1899.js.map": "/bracketzone/static/js/main.f57c1899.js.map",
+    "main.eb925672.css.map": "/bracketzone/static/css/main.eb925672.css.map",
+    "main.5e2e1229.js.map": "/bracketzone/static/js/main.5e2e1229.js.map",
     "453.049c7701.chunk.js.map": "/bracketzone/static/js/453.049c7701.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7f75fbc.css",
-    "static/js/main.f57c1899.js"
+    "static/css/main.eb925672.css",
+    "static/js/main.5e2e1229.js"
   ]
 }
